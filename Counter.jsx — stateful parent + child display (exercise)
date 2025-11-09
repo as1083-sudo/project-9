@@ -1,0 +1,17 @@
+import React, { useState } from "react";
+import Display from "./Display.jsx";
+
+export default function Counter() {
+  const [count, setCount] = useState(0);
+
+  return (
+    <div className="counter">
+      <Display count={count} />
+      <div className="row">
+        <button onClick={() => setCount((c) => c - 1)} className="btn">-</button>
+        <button onClick={() => setCount(0)} className="btn outline">Reset</button>
+        <button onClick={() => setCount((c) => c + 1)} className="btn">+</button>
+      </div>
+    </div>
+  );
+}
