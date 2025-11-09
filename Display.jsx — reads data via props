@@ -1,0 +1,9 @@
+import React from "react";
+
+export default function Display({ count }) {
+  return (
+    <p className="display">
+      Current Count: <strong>{count}</strong>
+    </p>
+  );
+}
